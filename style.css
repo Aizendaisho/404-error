@@ -1,0 +1,131 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  font-family: "Space Mono", monospace;
+}
+.contenedor {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  margin: 2rem;
+}
+
+.imagen {
+  height: 340px;
+}
+
+.texto {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.el-h2 {
+  position: absolute;
+  top: 0;
+  left: 5%;
+  font-family: "Inconsolata", monospace;
+}
+.el-h1 {
+  font-size: 64px;
+  font-weight: 700;
+  max-width: 700px;
+  margin: 0;
+}
+
+.el-p {
+  color: #4f4f4f;
+  font-size: 24px;
+  text-transform: capitalize;
+  line-height: 35.5px;
+  font-weight: 400;
+  max-width: 390px;
+  margin: 0;
+}
+.el-button {
+  border: none;
+  cursor: pointer;
+  color: white;
+  background-color: #333333;
+  font-family: "Space Mono", monospace;
+  font-size: 14px;
+  text-transform: uppercase;
+  width: 216px;
+  height: 68px;
+}
+
+/* 1129 */
+
+@media screen and (max-width: 1129px) {
+  .contenedor {
+    margin-top: 2rem;
+  }
+
+  .texto {
+    gap: 1.5rem;
+  }
+  .el-h1 {
+    font-size: 32px;
+    font-weight: 600;
+    max-width: 300px;
+    margin: 0;
+  }
+  .el-p {
+    color: #4f4f4f;
+    font-size: 12px;
+    text-transform: capitalize;
+    line-height: 18px;
+    font-weight: 400;
+    max-width: 200px;
+    margin: 0;
+  }
+  .el-button {
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: #333333;
+    font-family: "Space Mono", monospace;
+    font-size: 10px;
+    text-transform: uppercase;
+    width: 155px;
+    height: 48px;
+  }
+  .imagen {
+    height: 240px;
+  }
+}
+
+@media screen and (max-width: 717px) {
+  .contenedor {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .texto {
+    gap: 2.5rem;
+  }
+
+  .el-h1 {
+    font-size: 32px;
+    font-weight: 600;
+    max-width: 240px;
+    margin: 0;
+  }
+  .el-p {
+    color: #4f4f4f;
+    font-size: 12px;
+    text-transform: capitalize;
+    line-height: 18px;
+    font-weight: 400;
+    max-width: 220px;
+    margin: 0;
+  }
+  .imagen {
+    height: 240px;
+  }
+}
